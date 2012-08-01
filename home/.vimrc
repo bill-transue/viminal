@@ -37,6 +37,7 @@ fun! Wp()
   set spell spelllang=en_us
 endfu
 
+cabbr spell call Spell()
 function Spell()
   setlocal spell spellang=en_us
 endfu
