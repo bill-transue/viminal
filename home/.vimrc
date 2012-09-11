@@ -11,6 +11,7 @@ colorscheme solarized
 filetype plugin indent on
 set sw=2 ts=2 sts=2
 set expandtab
+set backspace=start
 
 set grepprg=grep\ -nH\ $*
 
