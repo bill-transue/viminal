@@ -15,7 +15,7 @@ Special Functions:
  * `:spell` turns on spell check
  * `:hardtabs` enables hard tabstops for those Makefiles
  * `:Hexmode` toggles hex editing
- * `CTRL-U` activates graphical undo tree
+ * `U` activates graphical undo tree
 
 Plugins auto-loaded by pathogen:
  * gundo (requires vim to be compiled with Python support)

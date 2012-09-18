@@ -11,7 +11,7 @@ colorscheme solarized
 filetype plugin indent on
 set sw=2 ts=2 sts=2
 set expandtab
-set backspace=start
+set backspace=indent,eol,start
 
 set grepprg=grep\ -nH\ $*
 
@@ -96,7 +96,7 @@ let g:Powerline_symbols = 'fancy'
 
 nnoremap <C-W>. :call MoveToNextTab()<CR>
 nnoremap <C-W>, :call MoveToPrevTab()<CR>
-nnoremap <C-u> :GundoToggle<CR>
+nnoremap U :GundoToggle<CR>
 nnoremap <C-s> :call Spell()<CR>
 
 " ex command for toggling hex mode - define mapping if desired
