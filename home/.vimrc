@@ -15,6 +15,8 @@ set backspace=indent,eol,start
 
 set grepprg=grep\ -nH\ $*
 
+set dictionary+=/usr/share/dict/words
+
 let g:tex_flavor='latex'
 
 cabbr hardtabs call Hardtabs()
