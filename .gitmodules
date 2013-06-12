@@ -49,3 +49,6 @@
 [submodule "home/.vim/bundle/screen"]
 	path = home/.vim/bundle/screen
 	url = git://github.com/ervandew/screen.git
+[submodule "home/.vim/bundle/ctrlp.vim"]
+	path = home/.vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git

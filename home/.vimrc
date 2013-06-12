@@ -19,6 +19,8 @@ set dictionary+=/usr/share/dict/words
 
 let g:tex_flavor='latex'
 
+let g:ctrlp_arg_map = 1
+
 cabbr hardtabs call Hardtabs()
 fun Hardtabs()
   set tabstop=8
