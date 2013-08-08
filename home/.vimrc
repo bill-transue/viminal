@@ -5,6 +5,8 @@ if has("mouse")
   set mouse=a
 endif
 
+set clipboard=unnamed
+
 syntax enable
 set background=dark
 colorscheme solarized
