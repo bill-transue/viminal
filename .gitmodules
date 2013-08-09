@@ -58,3 +58,6 @@
 [submodule "home/.powerline"]
 	path = home/.powerline
 	url = https://github.com/Lokaltog/powerline.git
+[submodule "home/.vim/bundle/vim-nerdtree-tabs"]
+	path = home/.vim/bundle/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git

@@ -102,6 +102,7 @@ let g:Powerline_symbols = 'fancy'
 
 nnoremap <C-W>. :call MoveToNextTab()<CR>
 nnoremap <C-W>, :call MoveToPrevTab()<CR>
+nnoremap Q :NERDTreeTabsToggle<CR>
 nnoremap U :GundoToggle<CR>
 nnoremap <C-s> :call Spell()<CR>
 
