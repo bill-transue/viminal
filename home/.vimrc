@@ -49,6 +49,21 @@ function Spell()
   setlocal spell spellang=en_us
 endfu
 
+let mapleader=","
+let localmapleader=","
+let g:ScreenImpl = 'Tmux'
+let g:ScreenShellTmuxInitArgs = '-2'
+let g:ScreenShellInitialFocus = 'shell'
+let g:ScreenShellQuitOnVimExit = 0
+map <Leader>c :ScreenShellVertical<CR>
+command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
+map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+
+" unmap C-O
+nnoremap <C-O> <nop>
+
 function MoveToPrevTab()
   "there is only one window
   if tabpagenr('$') == 1 && winnr('$') == 1
@@ -97,7 +112,6 @@ endfunc
 set nocompatible
 set laststatus=2
 set encoding=utf-8
-set t_Co=256
 let g:Powerline_symbols = 'fancy'
 
 nnoremap <C-W>. :call MoveToNextTab()<CR>
