@@ -61,3 +61,6 @@
 [submodule "home/.vim/bundle/vim-nerdtree-tabs"]
 	path = home/.vim/bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "home/.vim/bundle/vim-multiple-cursors"]
+	path = home/.vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
