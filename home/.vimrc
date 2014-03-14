@@ -22,6 +22,11 @@ set dictionary+=/usr/share/dict/words
 let g:tex_flavor='latex'
 
 let g:ctrlp_arg_map = 1
+" Sane Ignore For ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$'
+  \ }
 
 cabbr hardtabs call Hardtabs()
 fun Hardtabs()
