@@ -178,3 +178,5 @@ function ToggleHex()
   let &readonly=l:oldreadonly
   let &modifiable=l:oldmodifiable
 endfunction
+
+au BufRead USER_PLATFORM_UPDATES.markdown setlocal spell spelllang=en_us
