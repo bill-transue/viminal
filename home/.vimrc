@@ -12,12 +12,25 @@ set background=dark
 colorscheme solarized
 filetype plugin indent on
 set sw=2 ts=2 sts=2
+set shiftround
 set expandtab
 set backspace=indent,eol,start
 
 set grepprg=grep\ -nH\ $*
 
 set dictionary+=/usr/share/dict/words
+
+set hlsearch
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+
+set autoread
+
+if !&scrolloff
+  set scrolloff=1
+end
 
 let g:tex_flavor='latex'
 
