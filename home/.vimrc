@@ -20,6 +20,8 @@ set grepprg=grep\ -nH\ $*
 
 set dictionary+=/usr/share/dict/words
 
+set ignorecase
+set smartcase
 set hlsearch
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
